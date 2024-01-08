@@ -6,6 +6,11 @@ export PATH="/opt/homebrew/opt/bison/bin:$PATH"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
+
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # VS Code Shortcuts
@@ -14,6 +19,7 @@ alias tyrsyn="code -r ~/Desktop/tyrsyn"
 
 # Utilities
 alias restart="sudo shutdown -r now"
+alias trash="send2trash"
 alias sleepy="sudo shutdown -s now"
 alias ip="ipconfig getifaddr en0"
 
